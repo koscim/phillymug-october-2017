@@ -4,14 +4,12 @@
 import pymongo
 import datetime
 
-#
-# client defaults to localhost and port 27017. eg MongoClient('localhost', 27017)
 client  = pymongo.MongoClient()
 blogDatabase = client[ "blog" ]
 usersCollection = blogDatabase[ "users" ]
 articlesCollection = blogDatabase[ "articles" ]
 
-author = "jdrumgoole"
+author = "mlynn"
 title  = "This is a post on MongoDB"
  
 newPost = { "title"    : title,
